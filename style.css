@@ -1,0 +1,139 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(asset/WhatsApp\ Image\ 2024-12-30\ at\ 12.09.35_85f00983.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+header {
+    /* background: #4CAF50; */
+    color: white;
+    padding: 1rem 0;
+    height: 15vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    button{
+        background-color: #fff;
+        padding: 10px 20px;
+        color: #333;
+        border-radius: 5px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 18px;
+        /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.75); */
+        margin-top: 25px;
+        text-decoration: none;
+        transition: 4s;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #333;
+        color: #fff;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li:hover {
+    background-color: #333;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+
+.popup{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup_content{
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.75);
+    text-align: center;
+
+    
+}
+
+#login{
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+#registerBtn{
+    
+}
+input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.checkbox-container {
+    display: inline-flex;
+    align-items: self-start;
+   
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 2px; 
+}
+
+.one{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.close-btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;  
+    cursor: pointer; 
+}
