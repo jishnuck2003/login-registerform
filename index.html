@@ -34,12 +34,14 @@
                 </div>
                 
                 <button type="submit" id="login">Login</button>
-                <p>Dont have an account? <button id="registerBtn"><b>Register</b></button></p>
+               
             </form>
+            <p>Dont have an account? <a href="" id="registerBtn"><b>Register</b></a></p>
+        
         </div>
     </div>
     <div id="registerpopup" class="popup">
-        <div class="popup_content">
+        <div class="popup_content" id="reg_cont">
             <span class="close-btn">&times;</span>
             <form id="registerForm">
                 <input type="text" id="name" name="name" required placeholder="Name"><br><br>
@@ -47,8 +49,9 @@
                 <input type="password" id="password" name="password" required placeholder="Password"><br><br>
                 <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password"><br><br>
                 <button type="submit" id="register">Register</button>
-                <p>Already have an account? <button id="loginBtn"><b>Login</b></button></p>
+                
             </form>
+            <p >Already have an account? <a href="" >Login</a>
         </div>
     <script src="script.js"></script>
 </body>

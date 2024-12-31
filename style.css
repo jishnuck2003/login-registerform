@@ -39,16 +39,16 @@ header ul {
     }
     button{
         background-color: #fff;
-        padding: 10px 20px;
+        /* padding: 10px 20px; */
         color: #333;
         border-radius: 5px;
         font-weight: bolder;
         text-transform: uppercase;
         font-size: 18px;
         /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.75); */
-        margin-top: 25px;
+        /* margin-top: 25px; */
         text-decoration: none;
-        transition: 4s;
+        transition: 3s;
         cursor: pointer;
     }
     button:hover{
@@ -61,13 +61,32 @@ header ul {
 
 header ul li {
     margin: 0 1rem;
+    position: relative;
 }
 
 header ul li:hover {
-    background-color: #333;
-    color: #fff;
-    text-decoration: underline;
-    text-underline-offset: 8px;
+    /* background-color: #333; */
+    color: whitesmoke;
+    /* text-decoration: underline;
+    transition-delay: 3s;
+    
+    text-underline-position: below;
+    text-underline-offset: 8px; */
+} 
+header ul li::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+header ul li:hover::before{
+    width: 100%;
+    
 }
 
 
@@ -80,8 +99,17 @@ header ul li:hover {
     display: none;
     justify-content: center;
     align-items: center;
-
+    /* backdrop-filter: blur(10px); */
+    /* transition: 3s ; */
+    /* transform-style: flat;
+    transform-origin: center;
+    transition-timing-function: ease;
+    transform: scale(1); 
+    transition-duration: 3s;
+    transition: opacity 0.5s ease, visibility 0.5s ease; */
 }
+
+
 
 .popup_content{
     background: #fff;
@@ -92,9 +120,14 @@ header ul li:hover {
     position: relative;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.75);
     text-align: center;
-
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
     
 }
+
 
 #login{
     width: 90%;
@@ -103,6 +136,7 @@ header ul li:hover {
     border-radius: 5px;
     background-color: #333;
     color: #fff;
+    transition-delay: 3s;
 }
 #registerBtn{
     
@@ -136,4 +170,35 @@ input{
     width: 30px;
     border-radius: 50%;  
     cursor: pointer; 
+}
+
+#registerpopup{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+
+}
+
+#reg_cont{
+    display: grid;
+    position: relative;
+    left: 30%;
+    top: 23%;
+    /* justify-content: center;
+    align-items: center; */
+
+    p{
+        color: #fff;
+
+        a{
+            font-weight: bolder;
+            text-shadow:2px 2px 3px solid grey;
+        }
+    }
 }
